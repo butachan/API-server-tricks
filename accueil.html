@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Have fun training</title>
+    </head>
+
+    <body>
+        
+        
+
+        <form action="/add" method="POST">
+        <section>
+        <h2> your profile </h2>
+          <p> Email <input type="email" placeholder="ex:johndoe@ynov.com" name="email" required/> </p>
+           <p> Username<input type="text" placeholder="enter pseudo"name="Username"/> </p>
+         <p>  Password <input type="password" name= "password"/> </p>
+        </section>
+           
+
+        <section>
+        <label for="trainingHours">How long would train every week ?</label>
+            <input type="number" id="trainingHours" name="trainingHours"
+       min="1" max="50">
+        </section>
+        
+        <section>
+        <h4> Any related sport </h4>
+        <input type="checkbox" name="taekwondo" id="taekwondo" checked/>
+            <label for="taekwondo"> Taekwondo </label>
+        <input type="checkbox" name="capoiera" id="capoiera"/>
+            <label for="capoiera"> Capoiera</label>
+        <input type="checkbox" name="tumbling" id="tumbling" />
+            <label for="tumbling"> Tumbling </label>
+        <input type="checkbox" name="acrodance" id="acrodance" />
+            <label for="acrodance"> acrodance (bboy, comtempory) </label>
+        </section>
+
+        </br>
+        <input type="submit" value="confirm" /> 
+
+        </form>
+        
+        <h2> view</h2>
+        <form action="/view" method="POST">
+            <h3> View an user with his pseudoname </h3>
+            <p> Username<input type="text" placeholder="enter pseudo"name="Username" required/> </p>
+            <button type ="reset">Reset</button>
+            <button type ="submit">Submit</button>
+        </form>
+
+
+        <h2> Updating</h2>
+        <form action="/update" method="POST">
+            <h3> Update an user with his pseudoname </h3>
+            <p> Username<input type="text" placeholder="enter pseudo"name="Username" required/> </p>
+            <button type ="reset">Reset</button>
+            <button type ="submit">Update</button>
+        </form>
+
+        <h2> Delete</h2>
+        <form action="/delete" method="POST">
+            <h3> View an user with his pseudoname </h3>
+            <p> Username<input type="text" placeholder="enter pseudo"name="Username" required/> </p>
+            <button type ="reset">Reset</button>
+            <button type ="submit">Delete</button>
+        </form> 
+
+    </body>
+
+</html>
